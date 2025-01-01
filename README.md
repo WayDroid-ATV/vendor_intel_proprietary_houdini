@@ -1,10 +1,10 @@
-# Intel's libhoudini for Intel x86 CPU, pulled from ChromeOS's arcvm image for `hatch` Chromebooks
+# Intel's libhoudini for Intel x86 CPU, pulled from ChromeOS's arcvm image for `nissa` Chromebooks
 
-`houdini` version = 13.0.0a_y.39188.g
+`houdini` version = 13.0.1_y.39489.g
 
-`houdini64` version = 13.0.0a_z.39188.g
+`houdini64` version = 13.0.1_y.39489.g
 
-Android image fingerprint : google/hatch/hatch_cheets:13/R119-15633.69.0/11189719:user/release-keys
+Android image fingerprint: `google/nissa/nissa_cheets:13/R130-16033.58.0/12608590:user/release-keys`
 
 ## How to include it in your Android-x86 build :
 * To include it, cherry-pick or make this commit as a reference :
