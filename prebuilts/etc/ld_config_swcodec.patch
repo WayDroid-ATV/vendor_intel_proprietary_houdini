@@ -1,0 +1,48 @@
+--- ld.config.txt	2025-01-10 22:21:11.003325899 +0800
++++ ld.config.txt	2025-01-10 22:36:40.354265290 +0800
+@@ -242,6 +242,10 @@
+ namespace.sphal.search.paths += /vendor/${LIB}
+ namespace.sphal.search.paths += /vendor/${LIB}/egl
+ namespace.sphal.search.paths += /vendor/${LIB}/hw
++namespace.sphal.search.paths += /system/${LIB}/arm
++namespace.sphal.search.paths += /system/${LIB}/arm/nb
++namespace.sphal.search.paths += /system/${LIB}/arm64
++namespace.sphal.search.paths += /system/${LIB}/arm64/nb
+ namespace.sphal.search.paths += /vendor_extra/${LIB}
+ namespace.sphal.search.paths += /vendor_extra/${LIB}/egl
+ namespace.sphal.search.paths += /vendor_extra/${LIB}/hw
+@@ -251,6 +255,8 @@
+ namespace.sphal.permitted.paths += /vendor/${LIB}
+ namespace.sphal.permitted.paths += /vendor_extra/${LIB}
+ namespace.sphal.permitted.paths += /system/vendor/${LIB}
++namespace.sphal.permitted.paths += /system/${LIB}/arm
++namespace.sphal.permitted.paths += /system/${LIB}/arm64
+ namespace.sphal.permitted.paths += /system/${LIB}
+ namespace.sphal.asan.search.paths = /data/asan/odm/${LIB}
+ namespace.sphal.asan.search.paths += /odm/${LIB}
+@@ -262,6 +268,14 @@
+ namespace.sphal.asan.search.paths += /vendor/${LIB}/egl
+ namespace.sphal.asan.search.paths += /data/asan/vendor/${LIB}/hw
+ namespace.sphal.asan.search.paths += /vendor/${LIB}/hw
++namespace.sphal.asan.search.paths += /data/asan/system/${LIB}/arm
++namespace.sphal.asan.search.paths += /system/${LIB}/arm
++namespace.sphal.asan.search.paths += /data/asan/system/${LIB}/arm/nb
++namespace.sphal.asan.search.paths += /system/${LIB}/arm/nb
++namespace.sphal.asan.search.paths += /data/asan/system/${LIB}/arm64
++namespace.sphal.asan.search.paths += /system/${LIB}/arm64
++namespace.sphal.asan.search.paths += /data/asan/system/${LIB}/arm64/nb
++namespace.sphal.asan.search.paths += /system/${LIB}/arm64/nb
+ namespace.sphal.asan.search.paths += /data/asan/vendor_extra/${LIB}
+ namespace.sphal.asan.search.paths += /vendor_extra/${LIB}
+ namespace.sphal.asan.search.paths += /data/asan/vendor_extra/${LIB}/egl
+@@ -280,6 +294,10 @@
+ namespace.sphal.asan.permitted.paths += /vendor_extra/${LIB}
+ namespace.sphal.asan.permitted.paths += /data/asan/system/vendor/${LIB}
+ namespace.sphal.asan.permitted.paths += /system/vendor/${LIB}
++namespace.sphal.asan.permitted.paths += /data/asan/system/${LIB}/arm
++namespace.sphal.asan.permitted.paths += /system/${LIB}/arm
++namespace.sphal.asan.permitted.paths += /data/asan/system/${LIB}/arm64
++namespace.sphal.asan.permitted.paths += /system/${LIB}/arm64
+ namespace.sphal.asan.permitted.paths += /data/asan/system/${LIB}
+ namespace.sphal.asan.permitted.paths += /system/${LIB}
+ namespace.sphal.links = system,vndk
