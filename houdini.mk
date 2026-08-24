@@ -7,7 +7,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.dalvik.vm.native.bridge=libhoudini.so
 
 PRODUCT_PACKAGES += \
-    libhoudini \
     libhoudini-aaudio-aidl-cpp \
     libhoudini-aconfig_mediacodec_flags_c_lib \
     libhoudini-aconfig_text_flags_c_lib \
@@ -103,6 +102,7 @@ PRODUCT_PACKAGES += \
     libhoudini-android.hidl.safe_union@1.0 \
     libhoudini-android.hidl.token@1.0-utils \
     libhoudini-android.hidl.token@1.0 \
+    libhoudini-android.media.audio-aconfig-cc \
     libhoudini-android.media.audio.common.types-V1-cpp \
     libhoudini-android.media.audio.common.types-V2-cpp \
     libhoudini-android.media.audio.common.types-V2-ndk \
@@ -127,6 +127,7 @@ PRODUCT_PACKAGES += \
     libhoudini-av-types-aidl-cpp \
     libhoudini-camera_platform_flags_c_lib \
     libhoudini-capture_state_listener-aidl-cpp \
+    libhoudini-chre_flags_c_lib \
     libhoudini-com.android.media.aaudio-aconfig-cc \
     libhoudini-com.android.media.audio-aconfig-cc \
     libhoudini-com.android.media.audioclient-aconfig-cc \
@@ -179,6 +180,7 @@ PRODUCT_PACKAGES += \
     libhoudini-libandroidicu \
     libhoudini-libapexsupport \
     libhoudini-libappfuse \
+    libhoudini-libarchivestager \
     libhoudini-libart-compiler \
     libhoudini-libart-disassembler \
     libhoudini-libart-simulator-container \
@@ -189,6 +191,7 @@ PRODUCT_PACKAGES += \
     libhoudini-libartpalette \
     libhoudini-libaudio_aidl_conversion_common_cpp \
     libhoudini-libaudio_aidl_conversion_common_ndk \
+    libhoudini-libaudiobase \
     libhoudini-libaudioclient \
     libhoudini-libaudioclient_aidl_conversion \
     libhoudini-libaudioflinger \
@@ -240,6 +243,7 @@ PRODUCT_PACKAGES += \
     libhoudini-libcodec2_hidl_client@1.2 \
     libhoudini-libcodec2_soft_common \
     libhoudini-libcodec2_vndk \
+    libhoudini-libcom.android.tethering.connectivity_native \
     libhoudini-libcompiler_rt \
     libhoudini-libcore_jni_flags_c \
     libhoudini-libcrypto \
@@ -255,12 +259,14 @@ PRODUCT_PACKAGES += \
     libhoudini-libdng_sdk \
     libhoudini-libdrm \
     libhoudini-libegl_flags \
+    libhoudini-libelfutils \
     libhoudini-libexpat \
     libhoudini-libfmq \
     libhoudini-libft2 \
     libhoudini-libgralloctypes \
     libhoudini-libgraphicsenv \
     libhoudini-libgui \
+    libhoudini-libguiflags \
     libhoudini-libhardware \
     libhoudini-libhardware_legacy \
     libhoudini-libharfbuzz_ng \
@@ -341,9 +347,11 @@ PRODUCT_PACKAGES += \
     libhoudini-libpng \
     libhoudini-libpowermanager \
     libhoudini-libprocessgroup \
+    libhoudini-libprocessgroup_flags_c \
+    libhoudini-libprocessgroup_platform \
     libhoudini-libprocinfo \
     libhoudini-libprofile \
-    libhoudini-libprotobuf-cpp-lite-6.33.1 \
+    libhoudini-libprotobuf-cpp-lite-6.33.5 \
     libhoudini-libprotobuf-cpp-lite \
     libhoudini-libprotolog \
     libhoudini-libselinux \
@@ -402,6 +410,7 @@ PRODUCT_PACKAGES += \
     libhoudini-libz \
     libhoudini-libziparchive \
     libhoudini-media_quality_aidl_interface-cpp \
+    libhoudini-mediametricsservice-aidl-V1-cpp \
     libhoudini-mediametricsservice-aidl-cpp \
     libhoudini-packagemanager_aidl-cpp \
     libhoudini-process_info_service_aidl-cpp \
@@ -412,6 +421,6 @@ PRODUCT_PACKAGES += \
     libhoudini-volumegroupcallback-aidl-cpp \
     libhoudini \
     libhoudini-libtcb \
-    houdini \
+    libhoudini-cpuinfo.arm64.txt \
     houdini.rc \
-    libhoudini-cpuinfo.arm64.txt
+    houdini

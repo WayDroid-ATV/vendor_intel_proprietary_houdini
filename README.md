@@ -1,8 +1,8 @@
 # Intel's libhoudini for Intel x86 CPU, pulled from leaked Aluminium OS image for brya Chromebooks
 
-`houdini64` version = 17.0.0_z.39738.g
+`houdini64` version = 17.0.0a_z.39845.g
 
-Android image fingerprint : Android/generic_system/generic:17/CL2B.260324.001/15082641:user/release-keys
+Android image fingerprint : Android/desktop_system/desktop:17/CL3B.260621.001/15690895:userdebug/dev-keys
 
 ## How to include it in your Android-x86 build :
 * To include it, cherry-pick or make this commit as a reference :

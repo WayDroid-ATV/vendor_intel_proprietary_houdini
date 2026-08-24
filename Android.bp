@@ -1711,6 +1711,24 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libhoudini-android.media.audio-aconfig-cc",
+    stem: "android.media.audio-aconfig-cc",
+    check_elf_files: false,
+    compile_multilib: "64",
+    enabled: false,
+    arch: {
+        x86_64: {
+            enabled: true,
+            relative_install_path: "arm64/houdini",
+            srcs: ["prebuilts/lib64/arm64/android.media.audio-aconfig-cc.so"],
+        },
+    },
+    strip: {
+        none: true,
+    },
+}
+
+cc_prebuilt_library_shared {
     name: "libhoudini-android.media.audio.common.types-V1-cpp",
     stem: "android.media.audio.common.types-V1-cpp",
     check_elf_files: false,
@@ -2135,6 +2153,24 @@ cc_prebuilt_library_shared {
             enabled: true,
             relative_install_path: "arm64/houdini",
             srcs: ["prebuilts/lib64/arm64/capture_state_listener-aidl-cpp.so"],
+        },
+    },
+    strip: {
+        none: true,
+    },
+}
+
+cc_prebuilt_library_shared {
+    name: "libhoudini-chre_flags_c_lib",
+    stem: "chre_flags_c_lib",
+    check_elf_files: false,
+    compile_multilib: "64",
+    enabled: false,
+    arch: {
+        x86_64: {
+            enabled: true,
+            relative_install_path: "arm64/houdini",
+            srcs: ["prebuilts/lib64/arm64/chre_flags_c_lib.so"],
         },
     },
     strip: {
@@ -3079,6 +3115,24 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libhoudini-libarchivestager",
+    stem: "libarchivestager",
+    check_elf_files: false,
+    compile_multilib: "64",
+    enabled: false,
+    arch: {
+        x86_64: {
+            enabled: true,
+            relative_install_path: "arm64/houdini",
+            srcs: ["prebuilts/lib64/arm64/libarchivestager.so"],
+        },
+    },
+    strip: {
+        none: true,
+    },
+}
+
+cc_prebuilt_library_shared {
     name: "libhoudini-libart-compiler",
     stem: "libart-compiler",
     check_elf_files: false,
@@ -3251,6 +3305,24 @@ cc_prebuilt_library_shared {
             enabled: true,
             relative_install_path: "arm64/houdini",
             srcs: ["prebuilts/lib64/arm64/libaudio_aidl_conversion_common_ndk.so"],
+        },
+    },
+    strip: {
+        none: true,
+    },
+}
+
+cc_prebuilt_library_shared {
+    name: "libhoudini-libaudiobase",
+    stem: "libaudiobase",
+    check_elf_files: false,
+    compile_multilib: "64",
+    enabled: false,
+    arch: {
+        x86_64: {
+            enabled: true,
+            relative_install_path: "arm64/houdini",
+            srcs: ["prebuilts/lib64/arm64/libaudiobase.so"],
         },
     },
     strip: {
@@ -4177,6 +4249,24 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libhoudini-libcom.android.tethering.connectivity_native",
+    stem: "libcom.android.tethering.connectivity_native",
+    check_elf_files: false,
+    compile_multilib: "64",
+    enabled: false,
+    arch: {
+        x86_64: {
+            enabled: true,
+            relative_install_path: "arm64/houdini",
+            srcs: ["prebuilts/lib64/arm64/libcom.android.tethering.connectivity_native.so"],
+        },
+    },
+    strip: {
+        none: true,
+    },
+}
+
+cc_prebuilt_library_shared {
     name: "libhoudini-libcompiler_rt",
     stem: "libcompiler_rt",
     check_elf_files: false,
@@ -4447,6 +4537,24 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libhoudini-libelfutils",
+    stem: "libelfutils",
+    check_elf_files: false,
+    compile_multilib: "64",
+    enabled: false,
+    arch: {
+        x86_64: {
+            enabled: true,
+            relative_install_path: "arm64/houdini",
+            srcs: ["prebuilts/lib64/arm64/libelfutils.so"],
+        },
+    },
+    strip: {
+        none: true,
+    },
+}
+
+cc_prebuilt_library_shared {
     name: "libhoudini-libexpat",
     stem: "libexpat",
     check_elf_files: false,
@@ -4547,6 +4655,24 @@ cc_prebuilt_library_shared {
             enabled: true,
             relative_install_path: "arm64/houdini",
             srcs: ["prebuilts/lib64/arm64/libgui.so"],
+        },
+    },
+    strip: {
+        none: true,
+    },
+}
+
+cc_prebuilt_library_shared {
+    name: "libhoudini-libguiflags",
+    stem: "libguiflags",
+    check_elf_files: false,
+    compile_multilib: "64",
+    enabled: false,
+    arch: {
+        x86_64: {
+            enabled: true,
+            relative_install_path: "arm64/houdini",
+            srcs: ["prebuilts/lib64/arm64/libguiflags.so"],
         },
     },
     strip: {
@@ -5995,6 +6121,42 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libhoudini-libprocessgroup_flags_c",
+    stem: "libprocessgroup_flags_c",
+    check_elf_files: false,
+    compile_multilib: "64",
+    enabled: false,
+    arch: {
+        x86_64: {
+            enabled: true,
+            relative_install_path: "arm64/houdini",
+            srcs: ["prebuilts/lib64/arm64/libprocessgroup_flags_c.so"],
+        },
+    },
+    strip: {
+        none: true,
+    },
+}
+
+cc_prebuilt_library_shared {
+    name: "libhoudini-libprocessgroup_platform",
+    stem: "libprocessgroup_platform",
+    check_elf_files: false,
+    compile_multilib: "64",
+    enabled: false,
+    arch: {
+        x86_64: {
+            enabled: true,
+            relative_install_path: "arm64/houdini",
+            srcs: ["prebuilts/lib64/arm64/libprocessgroup_platform.so"],
+        },
+    },
+    strip: {
+        none: true,
+    },
+}
+
+cc_prebuilt_library_shared {
     name: "libhoudini-libprocinfo",
     stem: "libprocinfo",
     check_elf_files: false,
@@ -6031,8 +6193,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libhoudini-libprotobuf-cpp-lite-6.33.1",
-    stem: "libprotobuf-cpp-lite-6.33.1",
+    name: "libhoudini-libprotobuf-cpp-lite-6.33.5",
+    stem: "libprotobuf-cpp-lite-6.33.5",
     check_elf_files: false,
     compile_multilib: "64",
     enabled: false,
@@ -6040,7 +6202,7 @@ cc_prebuilt_library_shared {
         x86_64: {
             enabled: true,
             relative_install_path: "arm64/houdini",
-            srcs: ["prebuilts/lib64/arm64/libprotobuf-cpp-lite-6.33.1.so"],
+            srcs: ["prebuilts/lib64/arm64/libprotobuf-cpp-lite-6.33.5.so"],
         },
     },
     strip: {
@@ -7085,6 +7247,24 @@ cc_prebuilt_library_shared {
             enabled: true,
             relative_install_path: "arm64/houdini",
             srcs: ["prebuilts/lib64/arm64/media_quality_aidl_interface-cpp.so"],
+        },
+    },
+    strip: {
+        none: true,
+    },
+}
+
+cc_prebuilt_library_shared {
+    name: "libhoudini-mediametricsservice-aidl-V1-cpp",
+    stem: "mediametricsservice-aidl-V1-cpp",
+    check_elf_files: false,
+    compile_multilib: "64",
+    enabled: false,
+    arch: {
+        x86_64: {
+            enabled: true,
+            relative_install_path: "arm64/houdini",
+            srcs: ["prebuilts/lib64/arm64/mediametricsservice-aidl-V1-cpp.so"],
         },
     },
     strip: {
